@@ -16,6 +16,9 @@ footer {
     color:#ffffff;
     cursor: pointer;
 }
+.navbar-brand:hover {
+    color: #ffffff;
+}
 .nav-link {
     margin-right: 1em !important;
 }
@@ -32,20 +35,11 @@ footer {
     background: #ffffff !important;
 }
 
-.overlay { 
-    position: absolute; 
-    min-height: 100%; 
-    min-width: 100%; 
-    left: 0; 
-    top: 0; 
+body {
     background-image: url('../images/coloradosprings.jpg'); 
     background-attachment: fixed; 
     background-size: cover; 
     background-position: center;
-}
-
-.backimage {
-    background-color: #ffffff;
 }
 
 .descript {
@@ -73,4 +67,123 @@ footer {
     border: 1px solid #008d76; 
     background:#008d76; 
     color:#fff;
+}
+
+.container {
+    width: 960px;
+    height: 300px;
+}
+
+.imgset {
+    width: 960px;
+    content: "";
+    clear: both;
+    display: table;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    top: 100px;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.imgset, .imgset > .column {
+    padding: 8px;
+}
+
+.portfolio {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.portfolio:hover .text1 {
+    opacity: 0.9;
+}
+
+.pfolpic1 {
+    box-shadow: 2px 2px 7px black;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    display: block;
+    margin: auto;
+}
+
+.text1 {
+    position: absolute;
+    top: 70%;  
+    background: rgb(0, 121, 105); 
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    padding-top: 20px;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+h2 {
+    color: rgb(0, 121, 105);
+    text-align: center;
+    word-break: break-all;
+}
+
+#nfield1 {
+    width: 890px;
+    height: 25px;
+    padding: 0 10px;
+}
+
+#nfield1:hover, textarea:hover {
+    box-shadow: 0 0 1px rgb(0, 121, 105);
+}
+
+.submitb {
+    background-color: rgb(0, 121, 105);
+    border: none;
+    cursor: pointer;
+    border-color: 1px solid rgb(0, 121, 105);
+    color: white;
+    width: 100px;
+    height: 31px;
+    text-align: center;
+    padding-top: 3px;
+    margin-top: 10px;  
+}
+
+.submitb:hover {
+    background-color: rgb(0, 44, 38);
+    color: white;
+}
+
+.submitb:active {
+    background-color: #00ff95;
+    color: white;
+}
+
+#p3 {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #008d76;
+}
+
+textarea {
+    width: 890px;
+    height: 200px;
+    padding: 0 10px;
+}
+
+
+/*@media screen and (max-width:900px) {
+    .portfolio, .imgset, .text1 {
+        width: 70%;
+    }
+}*/
+
+@media screen and (max-width: 800px) {
+    .portfolio, .imgset, .text1 {
+        width: 70%;
+    }
 }
